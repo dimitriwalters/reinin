@@ -18,10 +18,8 @@ $(document).ready(function() {
     t = t2;
     var type = $(this).data('type');
     if (type) {
-      console.log('hi');
       $('.row-' + $(this).data('type')).toggle();
     } else {
-      console.log($('.check-all').is(':checked'));
       $('tbody tr').toggle($('.check-all').is(':checked'));
       $(':checkbox').prop('checked', $('.check-all').is(':checked'));
     }
