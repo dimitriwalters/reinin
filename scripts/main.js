@@ -5,11 +5,11 @@ $(document).ready(function() {
       'sDom': 't',
       'paging': false,
     });
+    $('a').click(function() {
+      window.open($(this).attr('href'), '_blank');
+      return false;
+    });
   }
-  $('a').click(function() {
-    window.open($(this).attr('href'), '_blank');
-    return false;
-  });
   $(':checkbox').change(function() {
     var t2 = t.clone();
     $('.dataTables_wrapper').remove();
