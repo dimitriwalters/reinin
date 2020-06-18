@@ -13,7 +13,7 @@ $(document).ready(function() {
   $(':checkbox').change(function() {
     var t2 = t.clone();
     $('.dataTables_wrapper').remove();
-    $('body').prepend(t2);
+    $('body').append(t2);
     initTable();
     t = t2;
     var type = $(this).data('type');
